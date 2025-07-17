@@ -16,9 +16,11 @@
           {
             "group": "Components",
             "pages": [
-              "components/table-explorations"
+              "components/table"
             ]
           }
+        ]
+      },
       {
         "tab": "API reference",
         "groups": [
