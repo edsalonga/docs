@@ -22,7 +22,7 @@
           {
             "group": "Example pages",
             "pages": [
-              "docs-kg/data-model-curriculum"
+              "exampledocs/kg-data-model-curriculum"
             ]
           }
         ]
