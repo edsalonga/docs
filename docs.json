@@ -18,6 +18,12 @@
             "pages": [
               "components/table"
             ]
+          },
+          {
+            "group": "Example pages",
+            "pages": [
+              "docs-kg/data-model"
+            ]
           }
         ]
       },
