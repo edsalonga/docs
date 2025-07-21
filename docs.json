@@ -14,7 +14,7 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Components",
+            "group": "Components explorations",
             "pages": [
               "components/table"
             ]
