@@ -23,7 +23,8 @@
             "group": "Example pages",
             "pages": [
               "exampledocs/kg-data-model-curriculum",
-              "exampledocs/kg-ontology-alignmentobject"
+              "exampledocs/kg-ontology-alignmentobject",
+              "exampledocs/evals-sentence-structure"
             ]
           }
         ]
