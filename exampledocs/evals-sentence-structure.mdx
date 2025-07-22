@@ -2,15 +2,11 @@
 title: "Sentence Structure Evaluator"
 description: "Sentence Structure evaluator  Check the sentence structure complexity of AI-generated texts aimed at grades 2-6."
 ---
+<Note>
+  This is a test migration from Google Docs to Mintlify using the Web Editor
+</Note>
 
 ![][image1]
-
-# Alpha
-
-| [Sentence structure evaluation](https://docs.google.com/document/d/1dG4fjW5977vmO96KATWd-PnGOCB_YC_HAIL-J4kFbjk/edit?tab=t.eu7if85ahali#heading=h.qreq1pp9bl3r) ⏵ [Requirements](#requirements) ⏵ [Running this evaluator](#running-the-evaluator) ⏵ [Interpreting results](#interpreting-results) ⏵ |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-
----
 
 This evaluator was developed specifically for AI-generated **informational texts aimed at grades 2–6**.
 
@@ -75,14 +71,17 @@ As you choose texts to test, keep in mind:
 
 ### — For best results
 
-| Run multiple times We recommend repeating these steps 3 times per text passage to smooth over any errors the LLM might make.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| **Run sentence labeling and complexity assignment in separate prompts** We split the evaluation into two stages because the evaluator can get confused when the stages are combined.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| **Apply a voting mechanism** In the sentence labeling task, we found that the same LLM can sometimes differ in its labeling across API calls. For example, when asked to categorize the sentence:  _The girl—a freckle-faced brunette, about ten years old, in a striped dress and sandals—bought an ice cream cone and took it to the park._ An LLM might incorrectly label this sentence as “basic complex” (one independent and one dependent clause). In another run with the LLM, it might label this sentence as simple (the correct categorization [per MLA](https://style.mla.org/types-of-sentences/)). Because LLMs can return different results for the same input, even when their temperature settings are low, we recommend running the evaluation 3 times for each input and treating each complexity rating as a “vote” towards the true rating.  You may want to try a higher number of runs for even greater confidence in the LLM’s output. |
+<Tip>
+  Run multiple times We recommend repeating these steps 3 times per text passage to smooth over any errors the LLM might make.
+</Tip>
 
----
+<Tip>
+  **Run sentence labeling and complexity assignment in separate prompts** We split the evaluation into two stages because the evaluator can get confused when the stages are combined.
+</Tip>
+
+<Tip>
+  **Apply a voting mechanism** In the sentence labeling task, we found that the same LLM can sometimes differ in its labeling across API calls. For example, when asked to categorize the sentence:  _The girl—a freckle-faced brunette, about ten years old, in a striped dress and sandals—bought an ice cream cone and took it to the park._ An LLM might incorrectly label this sentence as “basic complex” (one independent and one dependent clause). In another run with the LLM, it might label this sentence as simple (the correct categorization [per MLA](https://style.mla.org/types-of-sentences/)). Because LLMs can return different results for the same input, even when their temperature settings are low, we recommend running the evaluation 3 times for each input and treating each complexity rating as a “vote” towards the true rating.  You may want to try a higher number of runs for even greater confidence in the LLM’s output.
+</Tip>
 
 ## Interpreting results
 
