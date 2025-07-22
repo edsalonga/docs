@@ -11,10 +11,10 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Explorations",
         "groups": [
           {
-            "group": "Components explorations",
+            "group": "Components",
             "pages": [
               "components/table"
             ]
@@ -30,7 +30,7 @@
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Tab 2",
         "groups": [
           {
             "group": "API documentation",
