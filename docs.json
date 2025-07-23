@@ -30,7 +30,7 @@
         ]
       },
       {
-        "tab": "Tab 2",
+        "tab": "Knowledge Graph",
         "groups": [
           {
             "group": "API documentation",
@@ -46,6 +46,15 @@
               "api-reference/endpoint/delete",
               "api-reference/endpoint/webhook"
             ]
+          }
+        ]
+      },
+      {
+        "tab": "Evaluators",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": []
           }
         ]
       }
