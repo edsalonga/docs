@@ -56,13 +56,13 @@
       "anchors": [
         {
           "anchor": "Knowledge Graph",
-          "href": "/knowledge-graph/getting-started",
+          "href": "https://esalonga.mintlify.app/knowledge-graph/getting-started",
           "icon": "chart-diagram",
           "target": "_self"
         },
         {
           "anchor": "Evaluators",
-          "href": "/evaluators/getting-started",
+          "href": "https://esalonga.mintlify.app/evaluators/getting-started",
           "icon": "star",
           "target": "_self"
         }
