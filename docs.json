@@ -33,18 +33,9 @@
         "tab": "Knowledge Graph",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Getting Started",
             "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "knowledge-graph/getting-started"
             ]
           }
         ]
@@ -54,7 +45,9 @@
         "groups": [
           {
             "group": "Getting Started",
-            "pages": []
+            "pages": [
+              "evaluators/getting-started"
+            ]
           }
         ]
       }

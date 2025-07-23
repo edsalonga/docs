@@ -1,0 +1,90 @@
+---
+title: 'Getting Started with Evaluators'
+description: 'Learn how to use our evaluation system to assess and improve your AI models'
+---
+
+# Getting Started with Evaluators
+
+<Warning>
+  **This is a placeholder page** - This content is for demonstration purposes only and will be replaced with actual documentation.
+</Warning>
+
+Welcome to the Evaluators section! This guide will help you understand how to use our evaluation framework to test and validate your AI systems.
+
+## What are Evaluators?
+
+Evaluators are automated tools that help you:
+- ✅ Test model performance
+- 📊 Measure accuracy and reliability  
+- 🔍 Identify potential issues
+- 📈 Track improvements over time
+
+## Quick Start
+
+### Step 1: Install the Evaluator SDK
+
+```bash
+pip install evaluator-sdk
+```
+
+### Step 2: Create Your First Evaluation
+
+```python
+from evaluator import Evaluator
+
+# Initialize evaluator
+eval = Evaluator(
+    name="sample-evaluation",
+    model="gpt-4",
+    dataset="test-data.json"
+)
+
+# Run evaluation
+results = eval.run()
+print(f"Accuracy: {results.accuracy}")
+```
+
+### Step 3: View Results
+
+Navigate to your dashboard to see detailed results and metrics.
+
+## Example Use Cases
+
+<CardGroup cols={2}>
+  <Card title="Text Classification" icon="tag">
+    Evaluate how well your model categorizes text content
+  </Card>
+  <Card title="Sentiment Analysis" icon="heart">
+    Test accuracy of emotion and sentiment detection
+  </Card>
+  <Card title="Code Generation" icon="code">
+    Validate generated code quality and correctness
+  </Card>
+  <Card title="Question Answering" icon="question">
+    Assess response accuracy and relevance
+  </Card>
+</CardGroup>
+
+## Sample Evaluation Results
+
+| Metric | Score | Threshold |
+|--------|-------|-----------|
+| Accuracy | 94.2% | ≥ 90% |
+| Precision | 91.8% | ≥ 85% |
+| Recall | 96.1% | ≥ 90% |
+| F1 Score | 93.9% | ≥ 88% |
+
+<Note>
+  Remember: This is placeholder content! Replace with your actual evaluator documentation when ready.
+</Note>
+
+## Next Steps
+
+1. [Set up your evaluation environment](#)
+2. [Configure custom metrics](#)
+3. [Integrate with CI/CD pipelines](#)
+4. [Advanced evaluation techniques](#)
+
+<Tip>
+  Need help? Check out our [troubleshooting guide](#) or reach out to our support team.
+</Tip> 
