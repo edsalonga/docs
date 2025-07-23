@@ -56,13 +56,13 @@
       "anchors": [
         {
           "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "href": "/knowledge-graph/getting-started",
+          "icon": "chart-diagram"
         },
         {
           "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
+          "href": "/evaluators/getting-started",
+          "icon": "star"
         },
         {
           "anchor": "Blog",
