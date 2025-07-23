@@ -55,12 +55,12 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
+          "anchor": "Knowledge Graph",
           "href": "/knowledge-graph/getting-started",
           "icon": "chart-diagram"
         },
         {
-          "anchor": "Community",
+          "anchor": "Evaluators",
           "href": "/evaluators/getting-started",
           "icon": "star"
         },
