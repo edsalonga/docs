@@ -57,12 +57,14 @@
         {
           "anchor": "Knowledge Graph",
           "href": "/knowledge-graph/getting-started",
-          "icon": "chart-diagram"
+          "icon": "chart-diagram",
+          "target": "_self"
         },
         {
           "anchor": "Evaluators",
           "href": "/evaluators/getting-started",
-          "icon": "star"
+          "icon": "star",
+          "target": "_self"
         },
         {
           "anchor": "Blog",
