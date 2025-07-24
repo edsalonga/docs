@@ -56,13 +56,13 @@
       "anchors": [
         {
           "anchor": "Knowledge Graph",
-          "pages": ["knowledge-graph/getting-started"],
-          "icon": "chart-diagram"
+          "icon": "chart-diagram",
+          "href": "/knowledge-graph/getting-started"
         },
         {
           "anchor": "Evaluators",
-          "pages": ["evaluators/getting-started"], 
-          "icon": "star"
+          "icon": "star",
+          "href": "/evaluators/getting-started"
         }
       ]
     }
