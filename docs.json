@@ -26,11 +26,14 @@
     },
     "tabs": [
       {
-        "tab": "Home",
-        "pages": [
-          "index"
-        ],
+        "tab": "Overview",
         "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "index"
+            ]
+          },
           {
             "group": "Components",
             "pages": [
