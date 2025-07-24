@@ -10,9 +10,7 @@
   "favicon": "/favicon.svg",
   "navigation": {
     "global": {
-      "pages": [
-        "index"
-      ],
+
       "anchors": [
         {
           "anchor": "Knowledge Graph",
@@ -29,6 +27,9 @@
     "tabs": [
       {
         "tab": "Home",
+        "pages": [
+          "index"
+        ],
         "groups": [
           {
             "group": "Components",
