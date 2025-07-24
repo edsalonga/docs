@@ -1,0 +1,302 @@
+---
+title: 'Getting Started with Evaluators v1.0.2'
+description: 'Learn how to use our evaluation system to assess and improve your AI models - Version 1.0.2 (Latest)'
+version: '1.0.2'
+---
+
+# Getting Started with Evaluators
+
+<Check>
+  **You are viewing version 1.0.2** - This is the latest version with AI-powered insights and real-time monitoring. For previous versions, see [version 1.0.1](/evaluators/v1.0.1/getting-started) or [version 1.0.0](/evaluators/v1.0.0/getting-started).
+</Check>
+
+<Warning>
+  **This is a placeholder page** - This content is for demonstration purposes only and will be replaced with actual documentation.
+</Warning>
+
+Welcome to the Evaluators section v1.0.2! This guide will help you understand how to use our most advanced evaluation framework with AI-powered insights and real-time monitoring capabilities.
+
+## What are Evaluators?
+
+Evaluators are automated tools that help you:
+- ✅ Test model performance
+- 📊 Measure accuracy and reliability  
+- 🔍 Identify potential issues
+- 📈 Track improvements over time
+- 🚀 Batch processing support
+- 📋 Custom metric definitions
+- 🤖 **NEW: AI-powered evaluation insights**
+- 📡 **NEW: Real-time monitoring and alerts**
+- 🔄 **NEW: Continuous evaluation pipelines**
+
+## Quick Start
+
+### Step 1: Install the Evaluator SDK
+
+```bash
+pip install evaluator-sdk==1.0.2
+```
+
+### Step 2: Create Advanced Evaluations
+
+<CodeGroup>
+```python AI-Powered Evaluation (NEW)
+from evaluator import AIEvaluator
+
+# NEW: AI-powered evaluation with insights
+ai_eval = AIEvaluator(
+    name="ai-enhanced-evaluation",
+    model="gpt-4",
+    dataset="test-data.json",
+    enable_ai_insights=True,
+    insight_model="claude-3-sonnet",
+    auto_recommendations=True
+)
+
+# Run with AI analysis
+results = ai_eval.run_with_insights()
+print(f"Accuracy: {results.accuracy}")
+print(f"AI Insights: {results.insights.summary}")
+print(f"Recommendations: {results.recommendations}")
+```
+
+```python Real-time Monitoring (NEW)
+from evaluator import RealtimeEvaluator
+
+# NEW: Real-time evaluation monitoring
+rt_eval = RealtimeEvaluator(
+    name="production-monitoring",
+    model="gpt-4",
+    stream_endpoint="wss://api.example.com/stream",
+    alert_thresholds={
+        "accuracy": 0.85,
+        "latency": 2000
+    }
+)
+
+# Start continuous monitoring
+rt_eval.start_monitoring()
+```
+
+```python Continuous Pipeline (NEW)
+from evaluator import ContinuousEvaluator
+
+# NEW: Continuous evaluation pipeline
+pipeline = ContinuousEvaluator(
+    name="ci-cd-pipeline",
+    model="gpt-4",
+    trigger="git_push",
+    auto_deploy_threshold=0.95,
+    rollback_threshold=0.80
+)
+
+# Deploy with automatic evaluation gates
+pipeline.deploy_with_evaluation()
+```
+</CodeGroup>
+
+### Step 3: Advanced Custom Metrics with AI
+
+```python
+from evaluator.metrics import AIMetric, CustomMetric
+
+# AI-enhanced custom metric
+ai_metric = AIMetric(
+    name="contextual_relevance",
+    evaluator_model="gpt-4",
+    prompt_template="Rate the relevance of this response: {response}",
+    scale=(1, 10),
+    threshold=7.0
+)
+
+# Traditional custom metric
+custom_metric = CustomMetric(
+    name="domain_accuracy",
+    calculation=lambda pred, actual: calculate_domain_score(pred, actual),
+    threshold=0.85
+)
+
+# Add both to evaluator
+eval.add_metrics([ai_metric, custom_metric])
+```
+
+### Step 4: Real-time Dashboard and Alerts
+
+Navigate to your enhanced dashboard for:
+- Real-time performance monitoring
+- AI-generated insights and recommendations
+- Automated alert notifications
+- Trend analysis and predictions
+
+## Advanced Use Cases (v1.0.2)
+
+<CardGroup cols={2}>
+  <Card title="Production Monitoring" icon="chart-line">
+    Monitor live model performance with real-time alerts and AI insights
+  </Card>
+  <Card title="A/B Testing" icon="flask">
+    Compare model variants with statistical significance testing
+  </Card>
+  <Card title="Regression Detection" icon="exclamation-triangle">
+    Automatically detect performance degradation with AI analysis
+  </Card>
+  <Card title="Continuous Integration" icon="refresh">
+    Integrate evaluation gates into your CI/CD pipelines
+  </Card>
+</CardGroup>
+
+## Advanced Evaluation Results (v1.0.2)
+
+| Metric | Score | Threshold | Status | Trend | AI Insight |
+|--------|-------|-----------|--------|-------|------------|
+| Accuracy | 94.2% | ≥ 90% | ✅ Pass | ↗️ +1.2% | "Performance stable" |
+| Precision | 91.8% | ≥ 85% | ✅ Pass | ↘️ -0.3% | "Minor decline in edge cases" |
+| Recall | 96.1% | ≥ 90% | ✅ Pass | ↗️ +2.1% | "Improved recall on technical queries" |
+| **Contextual Relevance** | 8.4/10 | ≥ 7.0 | ✅ Pass | ↗️ +0.6 | "Strong contextual understanding" |
+| **Response Latency** | 1.2s | ≤ 2.0s | ✅ Pass | ↘️ +0.1s | "Slight latency increase" |
+
+## What's New in Version 1.0.2
+
+<Update label="Version 1.0.2" description="AI-powered insights and real-time monitoring">
+### New Features
+- 🤖 **AI-Powered Insights** - Get intelligent analysis of evaluation results
+- 📡 **Real-time Monitoring** - Live performance tracking with instant alerts
+- 🔄 **Continuous Pipelines** - Automated evaluation in CI/CD workflows
+- 📊 **Advanced Analytics** - Trend analysis and performance predictions
+- 🎯 **A/B Testing Framework** - Compare model variants with statistical analysis
+- 🚨 **Smart Alerting** - Context-aware notifications with AI recommendations
+
+### Improvements
+- 40% faster evaluation processing with optimized algorithms
+- Enhanced dashboard with real-time charts and AI insights
+- Improved accuracy of anomaly detection
+- Better integration with popular ML platforms
+- Advanced security features for enterprise deployment
+</Update>
+
+## Migration from v1.0.1
+
+<Steps>
+<Step title="Update your SDK">
+  ```bash
+  pip install evaluator-sdk==1.0.2
+  ```
+</Step>
+
+<Step title="Enable AI insights (optional)">
+  ```python
+  # Enhance existing evaluations with AI
+  eval = AIEvaluator(
+      name="existing-evaluation",
+      model="gpt-4",
+      dataset="test-data.json",
+      enable_ai_insights=True,  # NEW
+      insight_model="claude-3-sonnet"
+  )
+  ```
+</Step>
+
+<Step title="Set up real-time monitoring (optional)">
+  Configure real-time monitoring for production deployments.
+  
+  <Warning>
+  Real-time monitoring requires additional setup and may incur additional costs for high-volume applications.
+  </Warning>
+</Step>
+
+<Step title="Configure CI/CD integration (optional)">
+  Add evaluation gates to your deployment pipeline for automated quality control.
+</Step>
+</Steps>
+
+## Real-time Monitoring Setup
+
+<Tabs>
+<Tab title="Basic Monitoring">
+```python
+from evaluator import RealtimeEvaluator
+
+monitor = RealtimeEvaluator(
+    name="basic-monitoring",
+    model="gpt-4",
+    check_interval=60,  # seconds
+    alert_email="team@company.com"
+)
+
+monitor.start()
+```
+</Tab>
+
+<Tab title="Advanced Alerts">
+```python
+from evaluator import RealtimeEvaluator
+from evaluator.alerts import SlackAlert, EmailAlert
+
+monitor = RealtimeEvaluator(
+    name="advanced-monitoring",
+    model="gpt-4",
+    check_interval=30,
+    alerts=[
+        SlackAlert(webhook_url="..."),
+        EmailAlert(recipients=["team@company.com"])
+    ],
+    escalation_rules={
+        "critical": {"accuracy": 0.70},
+        "warning": {"accuracy": 0.85}
+    }
+)
+```
+</Tab>
+
+<Tab title="Custom Dashboards">
+```python
+from evaluator import Dashboard
+
+# Create custom dashboard
+dashboard = Dashboard(
+    name="production-metrics",
+    widgets=[
+        "accuracy_trend",
+        "latency_histogram", 
+        "ai_insights_panel",
+        "alert_timeline"
+    ],
+    refresh_rate=10  # seconds
+)
+
+dashboard.deploy()
+```
+</Tab>
+</Tabs>
+
+## Version 1.0.2 Features
+
+This cutting-edge version includes:
+- Basic evaluation framework
+- Core metrics (accuracy, precision, recall, F1)
+- Advanced dashboard with real-time monitoring
+- SDK for Python integration
+- Batch processing capabilities
+- Custom metric definitions
+- Parallel processing support
+- **NEW: AI-powered evaluation insights**
+- **NEW: Real-time monitoring and alerting**
+- **NEW: Continuous evaluation pipelines**
+- **NEW: A/B testing framework**
+- **NEW: Advanced analytics and predictions**
+
+<Note>
+  Remember: This is placeholder content for v1.0.2! Replace with your actual evaluator documentation when ready.
+</Note>
+
+## Next Steps
+
+1. [Set up AI-powered evaluation insights](#)
+2. [Configure real-time monitoring](#)
+3. [Integrate with CI/CD pipelines](#)
+4. [Advanced A/B testing strategies](#)
+5. [Custom dashboard creation](#)
+
+<Tip>
+  Leverage AI insights to automatically identify performance patterns and get actionable recommendations for model improvements.
+</Tip> 

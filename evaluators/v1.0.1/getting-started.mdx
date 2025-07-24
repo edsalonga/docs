@@ -1,0 +1,192 @@
+---
+title: 'Getting Started with Evaluators v1.0.1'
+description: 'Learn how to use our evaluation system to assess and improve your AI models - Version 1.0.1'
+version: '1.0.1'
+---
+
+# Getting Started with Evaluators
+
+<Check>
+  **You are viewing version 1.0.1** - This version includes batch processing and improved metrics. For the latest features, see [version 1.0.2](/evaluators/v1.0.2/getting-started). For the foundational version, see [version 1.0.0](/evaluators/v1.0.0/getting-started).
+</Check>
+
+<Warning>
+  **This is a placeholder page** - This content is for demonstration purposes only and will be replaced with actual documentation.
+</Warning>
+
+Welcome to the Evaluators section v1.0.1! This guide will help you understand how to use our enhanced evaluation framework to test and validate your AI systems with improved capabilities.
+
+## What are Evaluators?
+
+Evaluators are automated tools that help you:
+- ✅ Test model performance
+- 📊 Measure accuracy and reliability  
+- 🔍 Identify potential issues
+- 📈 Track improvements over time
+- 🚀 **NEW: Batch processing support**
+- 📋 **NEW: Custom metric definitions**
+
+## Quick Start
+
+### Step 1: Install the Evaluator SDK
+
+```bash
+pip install evaluator-sdk==1.0.1
+```
+
+### Step 2: Create Your First Evaluation (Enhanced)
+
+<CodeGroup>
+```python Single Evaluation
+from evaluator import Evaluator
+
+# Initialize evaluator with enhanced options
+eval = Evaluator(
+    name="sample-evaluation",
+    model="gpt-4",
+    dataset="test-data.json",
+    enable_batch_processing=True  # NEW in v1.0.1
+)
+
+# Run evaluation
+results = eval.run()
+print(f"Accuracy: {results.accuracy}")
+```
+
+```python Batch Processing (NEW)
+from evaluator import BatchEvaluator
+
+# NEW: Batch processing for multiple datasets
+batch_eval = BatchEvaluator(
+    name="batch-evaluation",
+    model="gpt-4",
+    datasets=["data1.json", "data2.json", "data3.json"],
+    parallel_workers=4
+)
+
+# Process all datasets
+batch_results = batch_eval.run_batch()
+for result in batch_results:
+    print(f"Dataset: {result.dataset}, Accuracy: {result.accuracy}")
+```
+</CodeGroup>
+
+### Step 3: Define Custom Metrics (NEW)
+
+```python
+from evaluator.metrics import CustomMetric
+
+# Define your own evaluation metric
+custom_metric = CustomMetric(
+    name="relevance_score",
+    calculation=lambda pred, actual: calculate_relevance(pred, actual),
+    threshold=0.8
+)
+
+# Add to evaluator
+eval.add_metric(custom_metric)
+```
+
+### Step 4: View Enhanced Results
+
+Navigate to your dashboard to see detailed results, batch summaries, and custom metrics.
+
+## Example Use Cases
+
+<CardGroup cols={2}>
+  <Card title="Text Classification" icon="tag">
+    Evaluate how well your model categorizes text content with batch support
+  </Card>
+  <Card title="Sentiment Analysis" icon="heart">
+    Test accuracy of emotion and sentiment detection across multiple datasets
+  </Card>
+  <Card title="Code Generation" icon="code">
+    Validate generated code quality with custom metrics
+  </Card>
+  <Card title="Question Answering" icon="question">
+    Assess response accuracy using enhanced relevance scoring
+  </Card>
+</CardGroup>
+
+## Enhanced Evaluation Results (v1.0.1)
+
+| Metric | Score | Threshold | Status |
+|--------|-------|-----------|--------|
+| Accuracy | 94.2% | ≥ 90% | ✅ Pass |
+| Precision | 91.8% | ≥ 85% | ✅ Pass |
+| Recall | 96.1% | ≥ 90% | ✅ Pass |
+| F1 Score | 93.9% | ≥ 88% | ✅ Pass |
+| **Relevance Score** | 89.3% | ≥ 80% | ✅ Pass |
+| **Batch Consistency** | 92.7% | ≥ 85% | ✅ Pass |
+
+## What's New in Version 1.0.1
+
+<Update label="Version 1.0.1" description="Enhanced processing and custom metrics">
+### New Features
+- 🚀 **Batch Processing** - Evaluate multiple datasets simultaneously
+- 📋 **Custom Metrics** - Define your own evaluation criteria
+- ⚡ **Parallel Processing** - Faster evaluation with multi-threading
+- 📊 **Enhanced Reporting** - Improved dashboard with batch summaries
+
+### Improvements
+- 25% faster evaluation processing
+- Better memory management for large datasets
+- Improved error handling and logging
+- Enhanced API documentation
+</Update>
+
+## Migration from v1.0.0
+
+<Steps>
+<Step title="Update your SDK">
+  ```bash
+  pip install evaluator-sdk==1.0.1
+  ```
+</Step>
+
+<Step title="Enable batch processing (optional)">
+  ```python
+  # Add batch processing to existing evaluations
+  eval = Evaluator(
+      name="existing-evaluation",
+      model="gpt-4",
+      dataset="test-data.json",
+      enable_batch_processing=True  # NEW parameter
+  )
+  ```
+</Step>
+
+<Step title="Add custom metrics (optional)">
+  Enhance your evaluations with domain-specific metrics.
+  
+  <Tip>
+  Custom metrics are backward compatible. Existing evaluations will continue to work without modification.
+  </Tip>
+</Step>
+</Steps>
+
+## Version 1.0.1 Features
+
+This enhanced version includes:
+- Basic evaluation framework
+- Core metrics (accuracy, precision, recall, F1)
+- Enhanced dashboard with batch reporting
+- SDK for Python integration
+- **NEW: Batch processing capabilities**
+- **NEW: Custom metric definitions**
+- **NEW: Parallel processing support**
+
+<Note>
+  Remember: This is placeholder content for v1.0.1! Replace with your actual evaluator documentation when ready.
+</Note>
+
+## Next Steps
+
+1. [Set up batch evaluation workflows](#)
+2. [Create custom metrics](#)
+3. [Configure parallel processing](#)
+4. [Advanced evaluation techniques](#)
+
+<Tip>
+  Take advantage of batch processing to evaluate multiple models or datasets simultaneously for comprehensive comparisons.
+</Tip> 

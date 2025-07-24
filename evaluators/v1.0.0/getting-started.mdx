@@ -1,0 +1,103 @@
+---
+title: 'Getting Started with Evaluators v1.0.0'
+description: 'Learn how to use our evaluation system to assess and improve your AI models - Version 1.0.0'
+version: '1.0.0'
+---
+
+# Getting Started with Evaluators
+
+<Info>
+  **You are viewing version 1.0.0** - This is the foundational release of the Evaluators documentation. For newer features, see [version 1.0.1](/evaluators/v1.0.1/getting-started) or [version 1.0.2](/evaluators/v1.0.2/getting-started).
+</Info>
+
+<Warning>
+  **This is a placeholder page** - This content is for demonstration purposes only and will be replaced with actual documentation.
+</Warning>
+
+Welcome to the Evaluators section v1.0.0! This guide will help you understand how to use our evaluation framework to test and validate your AI systems.
+
+## What are Evaluators?
+
+Evaluators are automated tools that help you:
+- ✅ Test model performance
+- 📊 Measure accuracy and reliability  
+- 🔍 Identify potential issues
+- 📈 Track improvements over time
+
+## Quick Start
+
+### Step 1: Install the Evaluator SDK
+
+```bash
+pip install evaluator-sdk==1.0.0
+```
+
+### Step 2: Create Your First Evaluation
+
+```python
+from evaluator import Evaluator
+
+# Initialize evaluator
+eval = Evaluator(
+    name="sample-evaluation",
+    model="gpt-4",
+    dataset="test-data.json"
+)
+
+# Run evaluation
+results = eval.run()
+print(f"Accuracy: {results.accuracy}")
+```
+
+### Step 3: View Results
+
+Navigate to your dashboard to see detailed results and metrics.
+
+## Example Use Cases
+
+<CardGroup cols={2}>
+  <Card title="Text Classification" icon="tag">
+    Evaluate how well your model categorizes text content
+  </Card>
+  <Card title="Sentiment Analysis" icon="heart">
+    Test accuracy of emotion and sentiment detection
+  </Card>
+  <Card title="Code Generation" icon="code">
+    Validate generated code quality and correctness
+  </Card>
+  <Card title="Question Answering" icon="question">
+    Assess response accuracy and relevance
+  </Card>
+</CardGroup>
+
+## Sample Evaluation Results
+
+| Metric | Score | Threshold |
+|--------|-------|-----------|
+| Accuracy | 94.2% | ≥ 90% |
+| Precision | 91.8% | ≥ 85% |
+| Recall | 96.1% | ≥ 90% |
+| F1 Score | 93.9% | ≥ 88% |
+
+## Version 1.0.0 Features
+
+This foundational version includes:
+- Basic evaluation framework
+- Core metrics (accuracy, precision, recall, F1)
+- Simple dashboard reporting
+- SDK for Python integration
+
+<Note>
+  Remember: This is placeholder content for v1.0.0! Replace with your actual evaluator documentation when ready.
+</Note>
+
+## Next Steps
+
+1. [Set up your evaluation environment](#)
+2. [Configure basic metrics](#)
+3. [View results in dashboard](#)
+4. [Basic evaluation techniques](#)
+
+<Tip>
+  Need help? Check out our [troubleshooting guide](#) or reach out to our support team.
+</Tip> 

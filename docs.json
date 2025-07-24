@@ -63,29 +63,86 @@
       },
       {
         "tab": "Knowledge Graph",
-        "groups": [
+        "versions": [
           {
-            "group": "Getting Started",
-            "pages": [
-              "knowledge-graph/getting-started"
+            "version": "v1.1",
+            "groups": [
+              {
+                "group": "Getting Started",
+                "pages": [
+                  "knowledge-graph/v1.1/getting-started"
+                ]
+              }
+            ]
+          },
+          {
+            "version": "v1.0",
+            "groups": [
+              {
+                "group": "Getting Started",
+                "pages": [
+                  "knowledge-graph/v1.0/getting-started"
+                ]
+              }
             ]
           }
         ]
       },
       {
         "tab": "Evaluators",
-        "groups": [
+        "versions": [
           {
-            "group": "Getting Started",
-            "pages": [
-              "evaluators/getting-started"
+            "version": "v1.0.2",
+            "groups": [
+              {
+                "group": "Getting Started",
+                "pages": [
+                  "evaluators/v1.0.2/getting-started"
+                ]
+              },
+              {
+                "group": "Text Complexity",
+                "pages": [
+                  "evaluators/sentence-structure",
+                  "evaluators/vocabulary"
+                ]
+              }
             ]
           },
           {
-            "group": "Text Complexity",
-            "pages": [
-              "evaluators/sentence-structure",
-              "evaluators/vocabulary"
+            "version": "v1.0.1",
+            "groups": [
+              {
+                "group": "Getting Started",
+                "pages": [
+                  "evaluators/v1.0.1/getting-started"
+                ]
+              },
+              {
+                "group": "Text Complexity",
+                "pages": [
+                  "evaluators/sentence-structure",
+                  "evaluators/vocabulary"
+                ]
+              }
+            ]
+          },
+          {
+            "version": "v1.0.0",
+            "groups": [
+              {
+                "group": "Getting Started",
+                "pages": [
+                  "evaluators/v1.0.0/getting-started"
+                ]
+              },
+              {
+                "group": "Text Complexity",
+                "pages": [
+                  "evaluators/sentence-structure",
+                  "evaluators/vocabulary"
+                ]
+              }
             ]
           }
         ]
