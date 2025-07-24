@@ -3,9 +3,20 @@
   "theme": "maple",
   "name": "Design Mintlify Sandbox",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#F73640",
+    "light": "#FF6B73",
+    "dark": "#D32F2F"
+  },
+  "fonts": {
+    "family": "Hanken Grotesk",
+    "heading": {
+      "family": "Hanken Grotesk",
+      "weight": 500
+    },
+    "body": {
+      "family": "Hanken Grotesk",
+      "weight": 300
+    }
   },
   "favicon": "/favicon.svg",
   "navigation": {
