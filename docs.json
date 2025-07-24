@@ -80,6 +80,13 @@
             "pages": [
               "evaluators/getting-started"
             ]
+          },
+          {
+            "group": "Text Complexity",
+            "pages": [
+              "evaluators/sentence-structure",
+              "evaluators/vocabulary"
+            ]
           }
         ]
       }
