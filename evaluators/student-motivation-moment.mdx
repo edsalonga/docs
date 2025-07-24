@@ -1,0 +1,57 @@
+---
+title: "Student Motivation Moment"
+description: "Understanding and evaluating moments of student motivation in educational content"
+tag: "Experimental"
+---
+
+# Student Motivation Moment
+
+The Student Motivation Moment evaluator helps identify and assess instances where educational content is designed to engage and motivate students in their learning journey.
+
+## Overview
+
+This evaluator analyzes content for elements that:
+- Spark curiosity and interest
+- Connect to student experiences
+- Provide clear relevance and purpose
+- Encourage active participation
+
+## Key Features
+
+- **Engagement Detection**: Identifies motivational elements in text
+- **Relevance Analysis**: Assesses how content connects to student interests
+- **Participation Indicators**: Evaluates opportunities for student involvement
+
+## Usage
+
+<CodeGroup>
+
+```python Python
+from evaluators import StudentMotivationMoment
+
+evaluator = StudentMotivationMoment()
+result = evaluator.evaluate(content)
+print(result.motivation_score)
+```
+
+```javascript JavaScript
+import { StudentMotivationMoment } from 'evaluators';
+
+const evaluator = new StudentMotivationMoment();
+const result = evaluator.evaluate(content);
+console.log(result.motivationScore);
+```
+
+</CodeGroup>
+
+## Response Format
+
+The evaluator returns a structured response containing:
+
+- `motivation_score`: Overall motivation level (0-100)
+- `engagement_elements`: List of identified motivational elements
+- `recommendations`: Suggestions for improvement
+
+<Note>
+This evaluator is currently in development. Additional features and improvements will be added in future releases.
+</Note> 

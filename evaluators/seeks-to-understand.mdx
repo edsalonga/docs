@@ -1,0 +1,62 @@
+---
+title: "Seeks to Understand"
+description: "Evaluating content that encourages students to seek deeper understanding and ask questions"
+tag: "Alpha"
+---
+
+# Seeks to Understand
+
+The Seeks to Understand evaluator identifies and assesses content that promotes intellectual curiosity and encourages students to dig deeper into subject matter.
+
+## Overview
+
+This evaluator analyzes educational content for elements that:
+- Promote questioning and inquiry
+- Encourage critical thinking
+- Foster curiosity about underlying concepts
+- Support exploration beyond surface-level information
+
+## Key Features
+
+- **Question Prompts**: Identifies content that encourages student questions
+- **Depth Indicators**: Assesses opportunities for deeper exploration
+- **Curiosity Triggers**: Evaluates elements that spark intellectual interest
+
+## Usage
+
+<CodeGroup>
+
+```python Python
+from evaluators import SeeksToUnderstand
+
+evaluator = SeeksToUnderstand()
+result = evaluator.evaluate(content)
+print(result.understanding_score)
+```
+
+```javascript JavaScript
+import { SeeksToUnderstand } from 'evaluators';
+
+const evaluator = new SeeksToUnderstand();
+const result = evaluator.evaluate(content);
+console.log(result.understandingScore);
+```
+
+</CodeGroup>
+
+## Response Format
+
+The evaluator returns a structured response containing:
+
+- `understanding_score`: Level of inquiry encouragement (0-100)
+- `question_prompts`: Identified elements that promote questioning
+- `depth_opportunities`: Areas for deeper exploration
+- `suggestions`: Recommendations for enhancing inquiry-based learning
+
+<Tip>
+Content that scores highly on this evaluator typically includes open-ended questions, thought experiments, and connections to broader concepts that invite further investigation.
+</Tip>
+
+<Warning>
+This evaluator is currently in beta. Please report any issues or feedback to help improve its accuracy and effectiveness.
+</Warning> 
