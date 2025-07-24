@@ -1,0 +1,51 @@
+---
+title: "Data model for standards"
+description: "Understanding the data structure and relationships for academic standards in the knowledge graph"
+---
+
+# Data model for standards
+
+This page describes the data model used to represent academic standards within the knowledge graph system.
+
+## Overview
+
+Academic standards define the learning expectations and benchmarks that guide educational content and assessment. Our data model captures the hierarchical relationships and metadata associated with various standards frameworks.
+
+## Key Components
+
+### Standard Framework
+- **Definition**: The overarching standards system (e.g., Common Core, NGSS)
+- **Properties**: Name, version, jurisdiction, subject area
+- **Relationships**: Contains multiple standard domains
+
+### Standard Domain
+- **Definition**: Major subject or skill areas within a framework
+- **Properties**: Domain identifier, title, description
+- **Relationships**: Part of framework, contains clusters
+
+### Standard Cluster
+- **Definition**: Groups of related standards within a domain
+- **Properties**: Cluster identifier, title, grade level range
+- **Relationships**: Part of domain, contains individual standards
+
+### Individual Standard
+- **Definition**: Specific learning objective or expectation
+- **Properties**: Standard code, statement, grade level, complexity
+- **Relationships**: Part of cluster, aligned to learning components
+
+## Data Structure
+
+```json
+{
+  "framework": {
+    "id": "ccss-math",
+    "name": "Common Core State Standards - Mathematics",
+    "version": "2010",
+    "domains": [...]
+  }
+}
+```
+
+## Implementation Notes
+
+This data model supports cross-referencing between standards and learning components, enabling alignment tracking and gap analysis across curriculum materials. 

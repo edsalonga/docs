@@ -1,0 +1,81 @@
+---
+title: "Data model for curriculum"
+description: "Understanding the data structure and relationships for curriculum in the knowledge graph"
+---
+
+# Data model for curriculum
+
+This page describes the data model used to represent curriculum structures within the knowledge graph system.
+
+## Overview
+
+The curriculum data model organizes educational content into coherent, sequential learning experiences. It defines how learning components are structured, sequenced, and delivered to achieve specific educational goals.
+
+## Key Components
+
+### Curriculum Framework
+- **Definition**: The overarching structure that organizes learning across subjects and grade levels
+- **Properties**: Framework ID, name, grade span, subject areas
+- **Relationships**: Contains courses, aligns to standards
+
+### Course
+- **Definition**: A structured sequence of learning experiences in a specific subject
+- **Properties**: Course ID, title, description, grade level, duration
+- **Relationships**: Part of framework, contains units
+
+### Unit
+- **Definition**: A thematic grouping of lessons focused on specific learning goals
+- **Properties**: Unit ID, title, essential questions, timeframe
+- **Relationships**: Part of course, contains lessons, addresses standards
+
+### Lesson
+- **Definition**: A single instructional session with specific objectives
+- **Properties**: Lesson ID, title, objectives, duration, materials
+- **Relationships**: Part of unit, includes activities, assesses learning
+
+### Learning Pathway
+- **Definition**: A personalized sequence of learning experiences
+- **Properties**: Pathway ID, student profile, adaptive rules
+- **Relationships**: References curriculum elements, tracks progress
+
+## Data Structure
+
+```json
+{
+  "curriculum": {
+    "id": "grade-5-math",
+    "name": "Grade 5 Mathematics Curriculum",
+    "courses": [
+      {
+        "id": "numbers-operations",
+        "units": [...],
+        "standards": [...]
+      }
+    ]
+  }
+}
+```
+
+## Curriculum Relationships
+
+The curriculum model supports multiple organizational patterns:
+- **Vertical Alignment**: How concepts build across grade levels
+- **Horizontal Alignment**: How subjects connect within a grade level
+- **Standards Alignment**: How curriculum maps to academic standards
+- **Prerequisite Mapping**: Dependencies between curriculum elements
+
+## Personalization Features
+
+### Adaptive Sequencing
+- Dynamic reordering based on student performance
+- Alternative pathways for different learning styles
+- Intervention and enrichment branching
+
+### Competency Tracking
+- Mastery-based progression criteria
+- Evidence collection from multiple assessments
+- Learning analytics integration
+
+## Implementation Notes
+
+This model enables flexible curriculum delivery while maintaining coherent learning progressions. It supports both traditional scope-and-sequence approaches and competency-based education models. 

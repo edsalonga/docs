@@ -1,0 +1,65 @@
+---
+title: "Data model for learning components"
+description: "Understanding the data structure and relationships for learning components in the knowledge graph"
+---
+
+# Data model for learning components
+
+This page describes the data model used to represent learning components within the knowledge graph system.
+
+## Overview
+
+Learning components are the fundamental building blocks of educational content. They represent discrete concepts, skills, or knowledge elements that can be combined to create comprehensive learning experiences.
+
+## Key Components
+
+### Learning Objective
+- **Definition**: A specific, measurable learning goal
+- **Properties**: Objective ID, statement, cognitive level, difficulty
+- **Relationships**: Aligned to standards, contains learning activities
+
+### Concept
+- **Definition**: A fundamental idea or principle to be learned
+- **Properties**: Concept ID, name, definition, subject area
+- **Relationships**: Has prerequisites, enables other concepts
+
+### Skill
+- **Definition**: A procedural ability or competency
+- **Properties**: Skill ID, name, type (cognitive/motor/social), proficiency levels
+- **Relationships**: Builds on prerequisite skills, demonstrated through activities
+
+### Learning Activity
+- **Definition**: A specific task or exercise designed to develop understanding
+- **Properties**: Activity ID, type, duration, materials needed
+- **Relationships**: Targets objectives, assesses skills and concepts
+
+### Assessment Item
+- **Definition**: A question or task used to measure learning
+- **Properties**: Item ID, type, difficulty, scoring rubric
+- **Relationships**: Measures objectives, evaluates concept understanding
+
+## Data Structure
+
+```json
+{
+  "learningComponent": {
+    "id": "algebra-linear-equations",
+    "type": "concept",
+    "name": "Linear Equations",
+    "prerequisites": ["basic-algebra", "coordinate-plane"],
+    "objectives": [...]
+  }
+}
+```
+
+## Relationships
+
+Learning components form a complex web of dependencies and alignments:
+- **Prerequisites**: Components that must be mastered before others
+- **Supports**: Components that enable understanding of more advanced topics
+- **Aligns to**: Standards that the component addresses
+- **Assessed by**: Items that measure mastery of the component
+
+## Implementation Notes
+
+This model enables adaptive learning pathways by mapping the relationships between components and tracking student progress through the learning graph. 
