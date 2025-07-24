@@ -56,7 +56,7 @@
       "anchors": [
         {
           "anchor": "Knowledge Graph",
-          "icon": "chart-diagram",
+          "icon": "diagram-project",
           "href": "https://esalonga.mintlify.app/knowledge-graph/getting-started"
         },
         {
