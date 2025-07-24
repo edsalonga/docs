@@ -214,7 +214,7 @@
   },
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/logo/dark.svg",
     "width": 168,
     "height": 40
   },
