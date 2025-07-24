@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "willow",
+  "theme": "palm",
   "name": "Design Mintlify Sandbox",
   "colors": {
     "primary": "#F73640",
@@ -215,11 +215,6 @@
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
-  },
-  "banner": {
-    "type": "info",
-    "text": "Learning components is in Private Beta. Sign up for Private Beta access.",
-    "href": "https://chanzuckerberg.com/education/ai/#ai-contact__form"
   },
   "navbar": {
   },
