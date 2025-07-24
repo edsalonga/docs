@@ -24,14 +24,14 @@
 
       "anchors": [
         {
-          "anchor": "Knowledge Graph",
-          "icon": "diagram-project",
-          "href": "https://esalonga.mintlify.app/knowledge-graph/getting-started"
+          "anchor": "Blog",
+          "icon": "newspaper",
+          "href": "https://chanzuckerberg.com/education/ai/"
         },
         {
-          "anchor": "Evaluators",
-          "icon": "star",
-          "href": "https://esalonga.mintlify.app/evaluators/getting-started"
+          "anchor": "Support",
+          "icon": "circle-question",
+          "href": "mailto:help@chanzuckerberg.com"
         }
       ]
     },
@@ -97,17 +97,6 @@
     "dark": "/logo/dark.svg"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
   },
   "footer": {
     "socials": {
