@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "maple",
+  "theme": "palm",
   "name": "Design Mintlify Sandbox",
   "colors": {
     "primary": "#F73640",
