@@ -9,9 +9,26 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
+    "global": {
+      "pages": [
+        "index"
+      ],
+      "anchors": [
+        {
+          "anchor": "Knowledge Graph",
+          "icon": "diagram-project",
+          "href": "https://esalonga.mintlify.app/knowledge-graph/getting-started"
+        },
+        {
+          "anchor": "Evaluators",
+          "icon": "star",
+          "href": "https://esalonga.mintlify.app/evaluators/getting-started"
+        }
+      ]
+    },
     "tabs": [
       {
-        "tab": "Explorations",
+        "tab": "Home",
         "groups": [
           {
             "group": "Components",
@@ -51,21 +68,7 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Knowledge Graph",
-          "icon": "diagram-project",
-          "href": "https://esalonga.mintlify.app/knowledge-graph/getting-started"
-        },
-        {
-          "anchor": "Evaluators",
-          "icon": "star",
-          "href": "https://esalonga.mintlify.app/evaluators/getting-started"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
