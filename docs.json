@@ -48,7 +48,8 @@
           {
             "group": "Components",
             "pages": [
-              "components/table"
+              "components/table",
+              "components/callouts"
             ]
           },
           {
