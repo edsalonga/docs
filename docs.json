@@ -8,7 +8,6 @@
     "dark": "#D32F2F"
   },
   "fonts": {
-    "family": "Hanken Grotesk",
     "heading": {
       "family": "Hanken Grotesk",
       "weight": 500
@@ -20,21 +19,6 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "global": {
-
-      "anchors": [
-        {
-          "anchor": "Blog",
-          "icon": "newspaper",
-          "href": "https://chanzuckerberg.com/education/ai/"
-        },
-        {
-          "anchor": "Support",
-          "icon": "circle-question",
-          "href": "mailto:help@chanzuckerberg.com"
-        }
-      ]
-    },
     "tabs": [
       {
         "tab": "Overview",
@@ -211,7 +195,21 @@
           }
         ]
       }
-    ]
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Blog",
+          "icon": "newspaper",
+          "href": "https://chanzuckerberg.com/education/ai/"
+        },
+        {
+          "anchor": "Support",
+          "icon": "circle-question",
+          "href": "mailto:help@chanzuckerberg.com"
+        }
+      ]
+    }
   },
   "logo": {
     "light": "/logo/light.svg",
