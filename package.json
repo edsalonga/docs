@@ -2,11 +2,8 @@
   "name": "czi-ai-developer-tools-docs",
   "version": "1.0.0",
   "scripts": {
-    "build": "mint build",
+    "build": "echo 'Static site - no build needed'",
     "dev": "mint dev",
-    "preview": "mint dev"
-  },
-  "dependencies": {
-    "mint": "^4.0.0"
+    "start": "mint dev"
   }
 }
