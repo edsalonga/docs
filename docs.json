@@ -24,7 +24,7 @@
         {
           "anchor": "Home",
           "icon": "house",
-          "href": "http://localhost:3002"
+          "href": "/marketing/"
         },
         {
           "anchor": "Blog",
