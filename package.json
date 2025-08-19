@@ -1,0 +1,12 @@
+{
+  "name": "czi-ai-developer-tools-docs",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "mint build",
+    "dev": "mint dev",
+    "preview": "mint dev"
+  },
+  "dependencies": {
+    "mint": "^4.0.0"
+  }
+}

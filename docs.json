@@ -24,7 +24,7 @@
         {
           "anchor": "Home",
           "icon": "house",
-          "href": "/marketing/"
+          "href": "https://czi-docs-test.vercel.app/marketing/"
         },
         {
           "anchor": "Blog",
