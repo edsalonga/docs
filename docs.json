@@ -19,6 +19,25 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Home",
+          "icon": "house",
+          "href": "http://localhost:3002"
+        },
+        {
+          "anchor": "Blog",
+          "icon": "newspaper",
+          "href": "https://chanzuckerberg.com/education/ai/"
+        },
+        {
+          "anchor": "Support",
+          "icon": "circle-question",
+          "href": "mailto:help@chanzuckerberg.com"
+        }
+      ]
+    },
     "tabs": [
       {
         "tab": "Overview",
@@ -195,21 +214,7 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Blog",
-          "icon": "newspaper",
-          "href": "https://chanzuckerberg.com/education/ai/"
-        },
-        {
-          "anchor": "Support",
-          "icon": "circle-question",
-          "href": "mailto:help@chanzuckerberg.com"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
